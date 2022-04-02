@@ -24,7 +24,7 @@ int main() {
     char buf[10];
     sprintf(buf, "tube2.exe %d", FD[0]);
     // Créer un processus fils.
-    if (!CreateProcess("tube2.exe", buf, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi)) {
+    if (!CreateProcess(NULL, buf, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi)) {
         printf("CreateProcess a échoué (%d).\n", GetLastError());
         ExitProcess(1);
     }

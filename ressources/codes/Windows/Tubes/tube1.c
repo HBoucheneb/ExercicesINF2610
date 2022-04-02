@@ -43,5 +43,4 @@ int main() {
     CloseHandle(pi.hProcess);
     CloseHandle(pi.hThread);
     ExitProcess(0);
-    return 0;
 }
